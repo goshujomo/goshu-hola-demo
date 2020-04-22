@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Story</title>
+    <base href="/" />
+    <meta name="description" content="This is a static page hosted outside of the Angular app, but should be one of the assets compiled into the distribution.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="/styles.css"></link>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul>
+          <a href="/">App</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h1>About this Site</h1>
+      <p>This is a static page hosted outside of the Angular app, but should be one of the assets compiled into the distribution.</p>
+      <p>It's important to understand how Google indexes single page applications. In order to accomplish this, we've built a site that can be used to understand how content is crawled.</p>
+      <p>We have two variations of this site.</p>
+      <p>One variation uses a "hashbang" style navigation. This approach is preferable, because it doesn't impose the need for redirects to be configured to a particular page. However, this approach could be intrinsically problematic.</p>
+      <p>Another variation uses the pushstate approach. Although the URLs look "clean" (because the don't contain a #!) it simply won't work without comprehensive control over which pages handle a particular path.</p>
+      <p>What we are attempting to understand is how indexing of "pages" works for each variation. It would also be great to understand if links to other sites count as backlinks.</p>
+      <p>I've created a link to <a href="https://wl-demo.goodshuffle.com/">Our Wishlist demo site</a> to determine if this page receives a backlink from the variations of our site.</p>
+      <p>The Angular components will link to other sites, but links to these sites will be controlled dynamically based on the window location. That way, we should be able to discern a difference in the way pages are navigated and/or backlinks are detected.</p>
+    </div>
+  </body>
+</html>
